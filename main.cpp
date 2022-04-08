@@ -1,9 +1,12 @@
 #include <iostream>
 #include "Adder/adder.h"
 #include "GLFW/glfw3.h"
+#include <HelloWorldConfig.h>
 
-int main()
+int main(int argc, char *argv[])
 {
+    std::cout << argv[0] << " Version " << HELLOWORLD_VERSION_MAJOR << "." << HELLOWORLD_VERSION_MINOR << std::endl;
+
     std::cout << "Hello World" << std::endl;
     std::cout << add(972.1, 83.9) << std::endl;
 
